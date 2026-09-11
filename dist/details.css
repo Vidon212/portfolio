@@ -3,3 +3,18 @@
 
 .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
 .recommendation-list { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; gap: 40px; padding-bottom: 20px; border-top: 1px solid #cbd9d3; margin: 52px 0 0; padding-top: 40px; } .recommendation-list::-webkit-scrollbar { height: 8px; } .recommendation-list::-webkit-scrollbar-thumb { background: #cbd9d3; border-radius: 4px; } .recommendation-list .recommendation { min-width: min(100%, 600px); scroll-snap-align: start; border-top: none; margin: 0; padding: 0; }
+
+/* Auto-scrolling marquee for recommendations */
+.recommendation-marquee-wrap { border-top: 1px solid #cbd9d3; margin: 52px 0 0; padding-top: 40px; overflow: hidden; position: relative; }
+.recommendation-marquee-wrap::before, .recommendation-marquee-wrap::after { content: ''; position: absolute; top: 0; bottom: 0; width: 120px; z-index: 2; pointer-events: none; }
+.recommendation-marquee-wrap::before { left: 0; background: linear-gradient(to right, var(--subtle), transparent); }
+.recommendation-marquee-wrap::after { right: 0; background: linear-gradient(to left, var(--subtle), transparent); }
+.recommendation-marquee { display: flex; gap: 32px; width: max-content; animation: marquee-scroll 48s linear infinite; }
+.recommendation-marquee:hover { animation-play-state: paused; }
+@keyframes marquee-scroll { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+.recommendation-marquee .recommendation { min-width: 420px; max-width: 420px; border-top: none; margin: 0; padding: 0 0 32px 0; background: #fff; border: 1px solid var(--line); padding: 28px 30px; flex-shrink: 0; }
+.recommendation-marquee .quote-mark { font-size: 48px; line-height: 1; }
+.recommendation-marquee blockquote { font-size: 18px; letter-spacing: -0.4px; margin: 6px 0 14px; line-height: 1.55; }
+.recommendation-marquee figcaption strong { font-size: 14px; font-weight: 650; display: block; }
+.recommendation-marquee figcaption span { color: var(--muted); font-size: 12px; }
+.recommendation-marquee-link { display: inline-block; margin-top: 20px; font-size: 12px; color: var(--muted); }
