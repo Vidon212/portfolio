@@ -1,4 +1,4 @@
-# Vinod Ramesh Kumar — professional portfolio
+# Vinod Loganathan Ramesh Kumar — professional portfolio
 
 Recruiter-focused static portfolio for Staff/Principal platform engineering and AI infrastructure roles. Authored HTML and CSS live in `dist/`; no build step or JavaScript is required.
 
