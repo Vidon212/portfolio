@@ -44,3 +44,8 @@ body{background:#f5f8f6;background-image:radial-gradient(circle at 8% 12%,rgba(2
 .work-section{background:linear-gradient(180deg,rgba(239,245,242,.96),rgba(232,240,236,.96))}
 .about-section{background:linear-gradient(180deg,rgba(244,248,246,.96),rgba(235,243,239,.96))}
 .contact-section{background:linear-gradient(135deg,#102c31 0%,#173e40 100%)}
+.hero{background:linear-gradient(135deg,#102c31 0%,#173e40 100%)}
+.button-lime{background:#e5ff91;color:#102c31}
+.hero h1 em,.hero .eyebrow{color:#e5ff91}
+.profile-photo{width:88px;height:88px;margin-bottom:24px;border-width:3px;box-shadow:0 10px 24px rgba(20,46,50,.2)}
+@media(max-width:600px){.profile-photo{width:80px;height:80px;margin-bottom:20px}}
