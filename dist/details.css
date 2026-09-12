@@ -18,3 +18,29 @@
 .recommendation-marquee figcaption strong { font-size: 14px; font-weight: 650; display: block; }
 .recommendation-marquee figcaption span { color: var(--muted); font-size: 12px; }
 .recommendation-marquee-link { display: inline-block; margin-top: 20px; font-size: 12px; color: var(--muted); }
+.header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.92);backdrop-filter:blur(14px);border-bottom:1px solid rgba(218,227,224,.75)}
+.button,.button-lime{border-radius:999px}
+.button-lime{box-shadow:0 8px 20px rgba(20,46,50,.1)}
+.button-lime:hover{box-shadow:0 12px 26px rgba(20,46,50,.16)}
+.work-section,.about-section{position:relative}
+.featured-work{border-radius:18px;overflow:hidden;box-shadow:0 18px 50px rgba(20,46,50,.07);transition:transform .25s ease,box-shadow .25s ease}
+.featured-work:hover{transform:translateY(-4px);box-shadow:0 24px 60px rgba(20,46,50,.11)}
+.project-card{border-radius:14px;box-shadow:0 8px 24px rgba(20,46,50,.04)}
+.project-card:hover{box-shadow:0 14px 32px rgba(20,46,50,.09)}
+.architecture{background:linear-gradient(145deg,#edf3f0,#e1ebe6)}
+.diagram-node,.agent-nodes>div{border-radius:9px}
+.diagram-node.orchestration-node{box-shadow:0 8px 18px rgba(20,46,50,.14)}
+.result-node{box-shadow:0 8px 18px rgba(172,198,138,.2)}
+.metrics article{padding-top:4px}
+.metrics article+article{transition:transform .2s ease}
+.metrics article:hover{transform:translateY(-3px)}
+.source-link,.text-link,.projects-header a,.project-link{transition:color .2s ease,border-color .2s ease}
+.source-link:hover,.text-link:hover,.projects-header a:hover{color:var(--green);border-color:var(--green)}
+.role{transition:background .2s ease}
+.role:hover{background:rgba(255,255,255,.5)}
+@media(max-width:600px){.header{position:relative}.featured-work{border-radius:14px}}
+body{background:#f5f8f6;background-image:radial-gradient(circle at 8% 12%,rgba(216,245,138,.2),transparent 26rem),radial-gradient(circle at 92% 46%,rgba(196,224,216,.24),transparent 30rem),linear-gradient(180deg,#f8faf9 0%,#f2f6f4 100%);background-attachment:fixed}
+.impact{background:rgba(255,255,255,.72);border-bottom:1px solid rgba(218,227,224,.7)}
+.work-section{background:linear-gradient(180deg,rgba(239,245,242,.96),rgba(232,240,236,.96))}
+.about-section{background:linear-gradient(180deg,rgba(244,248,246,.96),rgba(235,243,239,.96))}
+.contact-section{background:linear-gradient(135deg,#102c31 0%,#173e40 100%)}
